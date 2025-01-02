@@ -7,12 +7,6 @@ from linebot.v3.webhooks import MessageEvent, TextMessageContent
 import os
 from dotenv import load_dotenv
 
-app = Flask(__name__)
-
-configuration = Configuration(access_token='ESypFeRu3VzDuLFeRS+iRN/yMy6Evno+x67XFpuJFxtA/N6z8giWfY85A1+FctwkjyMvE3j5RAXqQM+E6AduWW60NWbevwV5bvTz/ePa/hZt0G2Ry350NX0g3t3APSP+LuhXXVTVn3DeD6kvGXoddAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('588ade68aab86dac55e4523a6ae9c290')
-
-
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
