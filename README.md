@@ -1,4 +1,4 @@
-# AI Chatbot for Toronto Travel Community
+# Chatbot for Toronto Travel Community
 This community was created to bring together young people in Toronto to network, travel, and make friends, with no restrictions on nationality or background.
 
 - User Size: 50+ (2024)
