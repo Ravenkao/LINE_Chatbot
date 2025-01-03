@@ -9,9 +9,8 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-configuration = Configuration(access_token='.')
-handler = WebhookHandler('.')
-
+LINE_ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN")
+LINE_CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET")
 
 @app.route("/callback", methods=['POST'])
 def callback():
